@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TH1</title>
+</head>
+<body>
+<p id="for"></p>
+<button type="button" onclick="baitap1()">Bai 1</button>
+<button type="button" onclick="baitap2()">Bai 2</button>
+<script>
+   function baitap1() {
+        let text = ""
+        for (let i = 0; i < 5; i++) {
+            text += "this is number:" + i + "<br>";
+        }
+        document.getElementById("for").innerHTML = text
+    }
+    function baitap2(){
+        let a = prompt("Nhap So a ");
+        let total = 0;
+        let i = 1
+
+        for ( i ; i <= a; i++){
+            total += i;
+        }
+        alert(total)
+    }
+</script>
+</body>
+</html>
